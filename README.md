@@ -3,7 +3,7 @@
 RESTful backend for user signup and login, event management, and booking built with nodejs, express, sequelize, and postgreSQL
 
 ## API endpoint
-Base URL:http://localhost:3000/
+Base URL:http://localhost:4000/
 1. Signup a user
 POST /auth/signup
 Create a new user
