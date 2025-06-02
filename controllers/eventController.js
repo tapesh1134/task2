@@ -3,10 +3,8 @@ const {Event} = require('../models');
 const getallevent = async (req, res) => {
   try {
     const events = await Event.findAll();
-
     res.json(events);
   } catch (error) {
-
     console.error(error);
     res.status(500).json({ message:'error'});
   }
@@ -56,10 +54,8 @@ const updateevent = async (req, res) => {
   try {
     const event = await Event.findByPk(req.params.id);
     if (!event) {
-
       return res.status(404).json({ message: 'no event' });
     }
-
     const { title, description, dateTime, location, totalSeats } = req.body;
     if (title !== undefined) event.title = title;
 
