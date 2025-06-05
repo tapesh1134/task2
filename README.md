@@ -47,6 +47,7 @@ Cancel a booking by ID
 
 ## Setup
 ```bash
+
 npm i
 npx sequelize db:migrate
 npm start
